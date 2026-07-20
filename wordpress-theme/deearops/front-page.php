@@ -1,54 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DeeAROps — Data Protection, Backup &amp; Disaster Recovery Specialists</title>
-<meta name="description" content="DeeAROps is a specialized IT services company focused entirely on data protection, backup, disaster recovery and replication — policy-driven, vendor-neutral, across on-premises and every major cloud.">
-<link rel="canonical" href="https://www.deearops.com/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DeeAROps — Your business never stops. Neither do we.">
-<meta property="og:description" content="Policy-driven backup, replication and disaster recovery — designed, implemented, tested, documented and managed.">
-<meta property="og:url" content="https://www.deearops.com/">
-<meta property="og:image" content="https://www.deearops.com/assets/logo-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css">
-<script src="js/main.js" defer></script>
-</head>
-<body>
-<a class="skip-link" href="#main">Skip to content</a>
-
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a class="brand" href="index.html" aria-label="DeeAROps home">
-      <img src="assets/logo-mark.png" alt="DeeAROps — infinity cloud logo" width="72" height="40">
-      <span>
-        <span class="brand-name">DeeAROps</span>
-        <span class="brand-tag">Data Protection &amp; DR</span>
-      </span>
-    </a>
-    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="solutions.html">Solutions</a></li>
-        <li><a href="industries.html">Industries</a></li>
-        <li><a href="technology.html">Technology</a></li>
-        <li><a href="insights.html">Insights</a></li>
-        <li class="mobile-only"><a href="contact.html">Talk to Our Experts</a></li>
-      </ul>
-    </nav>
-    <div class="nav-cta"><a class="btn btn-primary" href="contact.html">Talk to Our Experts</a></div>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </button>
-  </div>
-</header>
+<?php
+/**
+ * Template for the 'home' page — ported 1:1 from index.html.
+ */
+get_header();
+?>
 
 <main id="main">
 
@@ -61,8 +16,8 @@
           <h1 class="display">Your business never stops.<br>Neither do we.</h1>
           <p class="lead">Policy-driven backup, replication and disaster recovery — designed, implemented, tested, documented and managed. Across on-premises and every major cloud.</p>
           <div class="hero-ctas">
-            <a class="btn btn-primary" href="contact.html">Talk to Our Experts</a>
-            <a class="btn btn-secondary" href="services.html">Explore Our Capabilities</a>
+            <a class="btn btn-primary" href="<?php echo esc_url( deearops_url('contact') ); ?>">Talk to Our Experts</a>
+            <a class="btn btn-secondary" href="<?php echo esc_url( deearops_url('services') ); ?>">Explore Our Capabilities</a>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
@@ -136,7 +91,7 @@
           <h2>A specialist, not a generalist.</h2>
           <p class="lead" style="margin-top:16px;">DeeAROps is a specialized IT services company focused entirely on data protection, backup, disaster recovery and replication — helping organizations protect critical services, ensure business continuity, and meet recovery objectives across on-premises and cloud.</p>
           <p style="margin-top:16px;">Every solution is architected, implemented, tested, documented and managed — end to end.</p>
-          <p style="margin-top:24px;"><a class="text-link" href="about.html">More about DeeAROps <span class="arr" aria-hidden="true">→</span></a></p>
+          <p style="margin-top:24px;"><a class="text-link" href="<?php echo esc_url( deearops_url('about') ); ?>">More about DeeAROps <span class="arr" aria-hidden="true">→</span></a></p>
         </div>
         <div>
           <div class="value-row reveal">
@@ -228,7 +183,7 @@
               <p class="muted" style="margin-top:8px;">When something goes wrong with your IT — and it will — your business keeps running as if nothing happened.</p>
             </div>
           </div>
-          <p style="margin-top:24px;"><a class="text-link" href="services.html#disaster-recovery">Disaster Recovery services <span class="arr" aria-hidden="true">→</span></a></p>
+          <p style="margin-top:24px;"><a class="text-link" href="<?php echo esc_url( deearops_url('services') ); ?>#disaster-recovery">Disaster Recovery services <span class="arr" aria-hidden="true">→</span></a></p>
         </div>
         <div class="tab-panel" role="tabpanel" id="panel-backup" aria-labelledby="tab-backup" hidden>
           <div class="grid grid-3">
@@ -245,7 +200,7 @@
               <p class="muted" style="margin-top:8px;">Verified, restorable copies of what the business cannot afford to lose — with evidence, not assumptions.</p>
             </div>
           </div>
-          <p style="margin-top:24px;"><a class="text-link" href="services.html#backup-recovery">Backup &amp; Recovery services <span class="arr" aria-hidden="true">→</span></a></p>
+          <p style="margin-top:24px;"><a class="text-link" href="<?php echo esc_url( deearops_url('services') ); ?>#backup-recovery">Backup &amp; Recovery services <span class="arr" aria-hidden="true">→</span></a></p>
         </div>
         <div class="tab-panel" role="tabpanel" id="panel-policy" aria-labelledby="tab-policy" hidden>
           <div class="grid grid-3">
@@ -262,7 +217,7 @@
               <p class="muted" style="margin-top:8px;">Recovery promises the board, customers and auditors can rely on — documented, auditable, testable.</p>
             </div>
           </div>
-          <p style="margin-top:24px;"><a class="text-link" href="services.html#service-levels">Policy &amp; Assessment services <span class="arr" aria-hidden="true">→</span></a></p>
+          <p style="margin-top:24px;"><a class="text-link" href="<?php echo esc_url( deearops_url('services') ); ?>#service-levels">Policy &amp; Assessment services <span class="arr" aria-hidden="true">→</span></a></p>
         </div>
         <div class="tab-panel" role="tabpanel" id="panel-managed" aria-labelledby="tab-managed" hidden>
           <div class="grid grid-3">
@@ -279,7 +234,7 @@
               <p class="muted" style="margin-top:8px;">Accountability that stays — we remain your partner long after go-live, measured against contractual SLAs.</p>
             </div>
           </div>
-          <p style="margin-top:24px;"><a class="text-link" href="services.html#sla">Managed Services &amp; SLAs <span class="arr" aria-hidden="true">→</span></a></p>
+          <p style="margin-top:24px;"><a class="text-link" href="<?php echo esc_url( deearops_url('services') ); ?>#sla">Managed Services &amp; SLAs <span class="arr" aria-hidden="true">→</span></a></p>
         </div>
       </div>
     </div>
@@ -310,7 +265,7 @@
           <p>Operate and monitor day to day — evidence response, periodic evaluation, status reporting and tier-3 vendor escalation.</p>
         </div>
       </div>
-      <p class="reveal" style="margin-top:32px;"><a class="text-link" href="services.html">See the full responsibility matrices <span class="arr" aria-hidden="true">→</span></a></p>
+      <p class="reveal" style="margin-top:32px;"><a class="text-link" href="<?php echo esc_url( deearops_url('services') ); ?>">See the full responsibility matrices <span class="arr" aria-hidden="true">→</span></a></p>
     </div>
   </section>
 
@@ -344,7 +299,7 @@
         </div>
       </div>
       <div class="hero-ctas reveal" style="margin-top:48px;">
-        <a class="btn btn-primary" href="solutions.html">Explore SLA commitments</a>
+        <a class="btn btn-primary" href="<?php echo esc_url( deearops_url('solutions') ); ?>">Explore SLA commitments</a>
       </div>
     </div>
   </section>
@@ -483,7 +438,7 @@
         </button>
       </div>
 
-      <p class="reveal" style="margin-top:32px;text-align:center;"><a class="text-link" href="technology.html">Explore the full technology ecosystem <span class="arr" aria-hidden="true">→</span></a></p>
+      <p class="reveal" style="margin-top:32px;text-align:center;"><a class="text-link" href="<?php echo esc_url( deearops_url('technology') ); ?>">Explore the full technology ecosystem <span class="arr" aria-hidden="true">→</span></a></p>
     </div>
   </section>
 
@@ -494,7 +449,7 @@
       <span class="pill" id="eco-modal-cat"></span>
       <h3 id="eco-modal-title"></h3>
       <p id="eco-modal-desc"></p>
-      <a class="btn btn-primary" href="contact.html">Talk to Our Experts</a>
+      <a class="btn btn-primary" href="<?php echo esc_url( deearops_url('contact') ); ?>">Talk to Our Experts</a>
     </div>
   </dialog>
 
@@ -507,32 +462,32 @@
         <p class="lead">We prioritize the sectors where the cost of downtime, regulatory pressure and the duty to recover are highest.</p>
       </div>
       <div class="grid grid-3">
-        <a class="card reveal" href="industries.html#banking" style="text-decoration:none;">
+        <a class="card reveal" href="<?php echo esc_url( deearops_url('industries') ); ?>#banking" style="text-decoration:none;">
           <h3>Banking &amp; Finance</h3>
           <p>Strict mandates for documented recovery. Downtime measured in transactions lost per minute.</p>
           <span class="text-link">Industry view <span class="arr" aria-hidden="true">→</span></span>
         </a>
-        <a class="card reveal reveal-d1" href="industries.html#healthcare" style="text-decoration:none;">
+        <a class="card reveal reveal-d1" href="<?php echo esc_url( deearops_url('industries') ); ?>#healthcare" style="text-decoration:none;">
           <h3>Healthcare</h3>
           <p>Patient records and clinical systems that can never be unavailable — or unprotected.</p>
           <span class="text-link">Industry view <span class="arr" aria-hidden="true">→</span></span>
         </a>
-        <a class="card reveal reveal-d2" href="industries.html#government" style="text-decoration:none;">
+        <a class="card reveal reveal-d2" href="<?php echo esc_url( deearops_url('industries') ); ?>#government" style="text-decoration:none;">
           <h3>Government</h3>
           <p>Citizen services and audit obligations that demand provable, tested recovery.</p>
           <span class="text-link">Industry view <span class="arr" aria-hidden="true">→</span></span>
         </a>
-        <a class="card reveal" href="industries.html#telecom" style="text-decoration:none;">
+        <a class="card reveal" href="<?php echo esc_url( deearops_url('industries') ); ?>#telecom" style="text-decoration:none;">
           <h3>Telecom &amp; ISPs</h3>
           <p>Always-on infrastructure where every minute offline is immediately visible to customers.</p>
           <span class="text-link">Industry view <span class="arr" aria-hidden="true">→</span></span>
         </a>
-        <a class="card reveal reveal-d1" href="industries.html#insurance-energy" style="text-decoration:none;">
+        <a class="card reveal reveal-d1" href="<?php echo esc_url( deearops_url('industries') ); ?>#insurance-energy" style="text-decoration:none;">
           <h3>Insurance &amp; Energy</h3>
           <p>Regulated, high-stakes operations with strict continuity and audit requirements.</p>
           <span class="text-link">Industry view <span class="arr" aria-hidden="true">→</span></span>
         </a>
-        <a class="card reveal reveal-d2" href="industries.html#education-retail" style="text-decoration:none;">
+        <a class="card reveal reveal-d2" href="<?php echo esc_url( deearops_url('industries') ); ?>#education-retail" style="text-decoration:none;">
           <h3>Education &amp; Retail</h3>
           <p>Growing estates where a right-sized, policy-driven approach delivers protection without overspend.</p>
           <span class="text-link">Industry view <span class="arr" aria-hidden="true">→</span></span>
@@ -550,7 +505,7 @@
           <h2>100% vendor-agnostic. Every recommendation earns its place.</h2>
           <p class="lead" style="margin-top:16px;">We are not aligned with any single software vendor, platform or cloud provider. Recommendations are driven by customer requirements, security, scalability and best practice — not by vendor incentives.</p>
           <div class="hero-ctas">
-            <a class="btn btn-secondary" href="about.html">How we work</a>
+            <a class="btn btn-secondary" href="<?php echo esc_url( deearops_url('about') ); ?>">How we work</a>
           </div>
         </div>
         <div>
@@ -601,54 +556,12 @@
       <h2 class="display">Turn recovery into a guarantee.</h2>
       <p class="lead">Tell us what your business cannot afford to lose. A DeeAROps specialist will show you how it stays protected — designed, tested and managed.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="contact.html">Talk to Our Experts</a>
-        <a class="btn btn-secondary" href="services.html">Explore Our Capabilities</a>
+        <a class="btn btn-primary" href="<?php echo esc_url( deearops_url('contact') ); ?>">Talk to Our Experts</a>
+        <a class="btn btn-secondary" href="<?php echo esc_url( deearops_url('services') ); ?>">Explore Our Capabilities</a>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-main">
-      <div class="footer-brand">
-        <img src="assets/logo-mark-white.png" alt="DeeAROps logo" width="80" height="44">
-        <p class="tagline">Your Data Protected. Your Business Uninterrupted.</p>
-      </div>
-      <nav class="footer-col" aria-label="Company">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About DeeAROps</a></li>
-          <li><a href="industries.html">Industries</a></li>
-          <li><a href="insights.html">Insights</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-col" aria-label="Services">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html#disaster-recovery">Disaster Recovery</a></li>
-          <li><a href="services.html#backup-recovery">Backup &amp; Recovery</a></li>
-          <li><a href="services.html#service-levels">Policy &amp; Assessment</a></li>
-          <li><a href="services.html#sla">Managed Services</a></li>
-        </ul>
-      </nav>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:info@deearops.com">info@deearops.com</a></li>
-          <li><a href="tel:+971505978576">+971 505 978 576</a></li>
-          <li><a href="tel:+249912864609">+249 912 864 609</a></li>
-          <li>Riyadh, Olaya Street<br>Saudi Arabia</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 DeeAROps. All rights reserved.</span>
-      <span>Data Protection · Backup · Disaster Recovery · Replication</span>
-    </div>
-  </div>
-</footer>
-</body>
-</html>
+<?php get_footer(); ?>

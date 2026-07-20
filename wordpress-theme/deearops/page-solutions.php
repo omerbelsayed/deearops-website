@@ -1,0 +1,187 @@
+<?php
+/**
+ * Template for the 'solutions' page — ported 1:1 from solutions.html.
+ */
+get_header();
+?>
+
+<main id="main">
+
+  <section class="page-hero on-dark">
+    <div class="container">
+      <span class="eyebrow">Solutions</span>
+      <h1>Start from what your business cannot afford to lose.</h1>
+      <p class="lead">Every DeeAROps solution begins with a business question, not a product. Find your situation below — then see exactly how we take it from risk to guarantee.</p>
+    </div>
+  </section>
+
+  <!-- Problem 1 -->
+  <section class="section">
+    <div class="container">
+      <div class="feature-panel reveal">
+        <span class="eyebrow">Situation 01</span>
+        <h2>"Our critical services aren't properly protected yet."</h2>
+        <div class="grid grid-4" style="margin-top:32px;">
+          <div>
+            <h4>Business challenge</h4>
+            <p class="muted" style="margin-top:8px;">Critical IT services are running without a verified backup or replication system — every day is an unquantified risk.</p>
+          </div>
+          <div>
+            <h4>DeeAROps approach</h4>
+            <p class="muted" style="margin-top:8px;">The Build engagement: study your services, size and propose the solution, build and verify the jobs, train your team, document everything.</p>
+          </div>
+          <div>
+            <h4>Technology</h4>
+            <p class="muted" style="margin-top:8px;">Best-of-breed backup and replication platforms, matched to your infrastructure — designed to the 3-2-1-1-0 rule.</p>
+          </div>
+          <div>
+            <h4>Outcome</h4>
+            <p class="muted" style="margin-top:8px;">A protection system that is sized, configured, verified and documented — with tier-2 support behind it.</p>
+          </div>
+        </div>
+        <p style="margin-top:24px;"><a class="text-link" href="<?php echo esc_url( deearops_url('services') ); ?>#service-levels">See the Build responsibility matrix <span class="arr" aria-hidden="true">→</span></a></p>
+      </div>
+
+      <!-- Problem 2 -->
+      <div class="feature-panel reveal" style="margin-top:32px;">
+        <span class="eyebrow">Situation 02</span>
+        <h2>"We have backups — but can we actually recover?"</h2>
+        <div class="grid grid-4" style="margin-top:32px;">
+          <div>
+            <h4>Business challenge</h4>
+            <p class="muted" style="margin-top:8px;">Recovery objectives are undefined or undocumented. Auditors ask for evidence; the honest answer is an assumption.</p>
+          </div>
+          <div>
+            <h4>DeeAROps approach</h4>
+            <p class="muted" style="margin-top:8px;">Policy &amp; Assessment: specify RPO and RTO per service, build recovery scenarios and per-service runbooks, define operator OLAs — or assess and improve the existing environment.</p>
+          </div>
+          <div>
+            <h4>Technology</h4>
+            <p class="muted" style="margin-top:8px;">Grounded in your Business Impact Analysis and internationally recognized frameworks — ISO 22301, NIST CSF, ITIL.</p>
+          </div>
+          <div>
+            <h4>Outcome</h4>
+            <p class="muted" style="margin-top:8px;">Recovery promises that are documented, auditable and testable — for the board, customers and regulators.</p>
+          </div>
+        </div>
+        <p style="margin-top:24px;"><a class="text-link" href="<?php echo esc_url( deearops_url('services') ); ?>#service-levels">See the Policy &amp; Assess scope <span class="arr" aria-hidden="true">→</span></a></p>
+      </div>
+
+      <!-- Problem 3 -->
+      <div class="feature-panel reveal" style="margin-top:32px;">
+        <span class="eyebrow">Situation 03</span>
+        <h2>"We can't staff 24/7 operations for backup and DR."</h2>
+        <div class="grid grid-4" style="margin-top:32px;">
+          <div>
+            <h4>Business challenge</h4>
+            <p class="muted" style="margin-top:8px;">Backup and replication estates need daily operation, monitoring and audit evidence — a specialist function most IT teams cannot staff around the clock.</p>
+          </div>
+          <div>
+            <h4>DeeAROps approach</h4>
+            <p class="muted" style="margin-top:8px;">Managed Service: continuous operation and monitoring, evidence response, periodic evaluation, status reporting and tier-3 vendor escalation. You keep read-only oversight.</p>
+          </div>
+          <div>
+            <h4>Technology</h4>
+            <p class="muted" style="margin-top:8px;">Operated on your platforms with enterprise monitoring toolsets — SolarWinds, PRTG, Zabbix, Grafana, Prometheus, SCOM.</p>
+          </div>
+          <div>
+            <h4>Outcome</h4>
+            <p class="muted" style="margin-top:8px;">A 24/7 DR &amp; backup function measured against contractual SLAs — reported monthly, with service credits behind P1 targets.</p>
+          </div>
+        </div>
+        <p style="margin-top:24px;"><a class="text-link" href="<?php echo esc_url( deearops_url('services') ); ?>#sla">See SLA commitments <span class="arr" aria-hidden="true">→</span></a></p>
+      </div>
+
+      <!-- Problem 4 : partners -->
+      <div class="feature-panel reveal" style="margin-top:32px;">
+        <span class="eyebrow">Situation 04 · For partners &amp; system integrators</span>
+        <h2>"We need DR &amp; backup capability we don't have in-house."</h2>
+        <div class="grid grid-4" style="margin-top:32px;">
+          <div>
+            <h4>Business challenge</h4>
+            <p class="muted" style="margin-top:8px;">Your customers expect data-protection depth in every bid — but a dedicated DR &amp; backup bench is expensive to build and keep busy.</p>
+          </div>
+          <div>
+            <h4>DeeAROps approach</h4>
+            <p class="muted" style="margin-top:8px;">We operate on your behalf — as technology partner, subcontractor or dedicated delivery department — under your standards, brand and account relationships.</p>
+          </div>
+          <div>
+            <h4>Technology</h4>
+            <p class="muted" style="margin-top:8px;">100% vendor-agnostic across every major backup, replication, cloud and virtualization platform your customers run.</p>
+          </div>
+          <div>
+            <h4>Outcome</h4>
+            <p class="muted" style="margin-top:8px;">You bid and deliver specialist capability without building it — invisible to the end customer, end to end.</p>
+          </div>
+        </div>
+        <p style="margin-top:24px;"><a class="text-link" href="<?php echo esc_url( deearops_url('about') ); ?>">How we work with partners <span class="arr" aria-hidden="true">→</span></a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recovery tiers -->
+  <section class="section band-navy on-dark">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Recovery tiers</span>
+        <h2>RPO and RTO set per service — from the Business Impact Analysis.</h2>
+        <p class="lead">Not every service needs a 15-minute recovery. Tiering protection to business impact is how protection stays affordable and credible.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card reveal">
+          <span class="pill" style="background:rgba(255,255,255,0.12);color:#fff;">Tier 1 · Mission-critical</span>
+          <div class="stat-num" style="margin-top:16px;">≤ 15 min</div>
+          <div class="stat-label">RPO — maximum data loss</div>
+          <div class="stat-num" style="margin-top:16px;">≤ 1 hr</div>
+          <div class="stat-label">RTO — maximum downtime</div>
+        </div>
+        <div class="card reveal reveal-d1">
+          <span class="pill" style="background:rgba(255,255,255,0.12);color:#fff;">Tier 2 · Business</span>
+          <div class="stat-num" style="margin-top:16px;">≤ 4 hrs</div>
+          <div class="stat-label">RPO — maximum data loss</div>
+          <div class="stat-num" style="margin-top:16px;">≤ 8 hrs</div>
+          <div class="stat-label">RTO — maximum downtime</div>
+        </div>
+        <div class="card reveal reveal-d2">
+          <span class="pill" style="background:rgba(255,255,255,0.12);color:#fff;">Tier 3 · Standard</span>
+          <div class="stat-num" style="margin-top:16px;">≤ 24 hrs</div>
+          <div class="stat-label">RPO — maximum data loss</div>
+          <div class="stat-num" style="margin-top:16px;">≤ 48 hrs</div>
+          <div class="stat-label">RTO — maximum downtime</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ideal customer -->
+  <section class="section bg-paper">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Is this you?</span>
+        <h2>Our best engagements share six traits.</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card reveal"><p>Runs critical IT services the business cannot operate without.</p></div>
+        <div class="card reveal reveal-d1"><p>Has experienced at least one major IT incident or near-miss.</p></div>
+        <div class="card reveal reveal-d2"><p>Operates in a regulated environment with audit obligations.</p></div>
+        <div class="card reveal"><p>Has a C-level sponsor who understands business risk.</p></div>
+        <div class="card reveal reveal-d1"><p>Runs a hybrid or multi-cloud environment needing cross-platform expertise.</p></div>
+        <div class="card reveal reveal-d2"><p>Lacks dedicated in-house DR expertise and needs a specialist partner.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section band-navy on-dark cta-band">
+    <div class="container reveal">
+      <h2 class="display">Recovery is a plan, not a hope.</h2>
+      <p class="lead">Tell us your situation — we will map it to a scope, a tier and a measurable commitment.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="<?php echo esc_url( deearops_url('contact') ); ?>">Talk to Our Experts</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<?php get_footer(); ?>

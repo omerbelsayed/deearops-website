@@ -1,50 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Technology Ecosystem — Cross-Platform Data Protection | DeeAROps</title>
-<meta name="description" content="The DeeAROps technology ecosystem: infrastructure, virtualization, cloud platforms, operating systems, databases, backup and replication toolsets, storage, networking and monitoring — 100% vendor-agnostic.">
-<link rel="canonical" href="https://www.deearops.com/technology.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DeeAROps Technology — Cross-platform by design">
-<meta property="og:description" content="We protect critical data wherever it lives — on-premises and across every major cloud.">
-<meta property="og:url" content="https://www.deearops.com/technology.html">
-<meta property="og:image" content="https://www.deearops.com/assets/logo-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css">
-<script src="js/main.js" defer></script>
-</head>
-<body>
-<a class="skip-link" href="#main">Skip to content</a>
-
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a class="brand" href="index.html" aria-label="DeeAROps home">
-      <img src="assets/logo-mark.png" alt="DeeAROps — infinity cloud logo" width="72" height="40">
-      <span><span class="brand-name">DeeAROps</span><span class="brand-tag">Data Protection &amp; DR</span></span>
-    </a>
-    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="solutions.html">Solutions</a></li>
-        <li><a href="industries.html">Industries</a></li>
-        <li><a href="technology.html" aria-current="page">Technology</a></li>
-        <li><a href="insights.html">Insights</a></li>
-        <li class="mobile-only"><a href="contact.html">Talk to Our Experts</a></li>
-      </ul>
-    </nav>
-    <div class="nav-cta"><a class="btn btn-primary" href="contact.html">Talk to Our Experts</a></div>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </button>
-  </div>
-</header>
+<?php
+/**
+ * Template for the 'technology' page — ported 1:1 from technology.html.
+ */
+get_header();
+?>
 
 <main id="main">
 
@@ -220,7 +179,7 @@
       <span class="pill" id="eco-modal-cat"></span>
       <h3 id="eco-modal-title"></h3>
       <p id="eco-modal-desc"></p>
-      <a class="btn btn-primary" href="contact.html">Talk to Our Experts</a>
+      <a class="btn btn-primary" href="<?php echo esc_url( deearops_url('contact') ); ?>">Talk to Our Experts</a>
     </div>
   </dialog>
 
@@ -359,53 +318,11 @@
       <h2 class="display">The right tool for the workload.</h2>
       <p class="lead">No reseller margins. No quotas. Recommendations driven by your requirements, security, scalability and best practice.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="contact.html">Talk to Our Experts</a>
+        <a class="btn btn-primary" href="<?php echo esc_url( deearops_url('contact') ); ?>">Talk to Our Experts</a>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-main">
-      <div class="footer-brand">
-        <img src="assets/logo-mark-white.png" alt="DeeAROps logo" width="80" height="44">
-        <p class="tagline">Your Data Protected. Your Business Uninterrupted.</p>
-      </div>
-      <nav class="footer-col" aria-label="Company">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About DeeAROps</a></li>
-          <li><a href="industries.html">Industries</a></li>
-          <li><a href="insights.html">Insights</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-col" aria-label="Services">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html#disaster-recovery">Disaster Recovery</a></li>
-          <li><a href="services.html#backup-recovery">Backup &amp; Recovery</a></li>
-          <li><a href="services.html#service-levels">Policy &amp; Assessment</a></li>
-          <li><a href="services.html#sla">Managed Services</a></li>
-        </ul>
-      </nav>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:info@deearops.com">info@deearops.com</a></li>
-          <li><a href="tel:+971505978576">+971 505 978 576</a></li>
-          <li><a href="tel:+249912864609">+249 912 864 609</a></li>
-          <li>Riyadh, Olaya Street<br>Saudi Arabia</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 DeeAROps. All rights reserved.</span>
-      <span>Data Protection · Backup · Disaster Recovery · Replication</span>
-    </div>
-  </div>
-</footer>
-</body>
-</html>
+<?php get_footer(); ?>

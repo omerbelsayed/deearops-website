@@ -1,0 +1,306 @@
+<?php
+/**
+ * Template for the 'services' page — ported 1:1 from services.html.
+ */
+get_header();
+?>
+
+<main id="main">
+
+  <section class="page-hero on-dark">
+    <div class="container">
+      <span class="eyebrow">Services</span>
+      <h1>Designed, governed and operated — end to end.</h1>
+      <p class="lead">Every solution is architected, implemented, tested, documented and managed. Whether the workload is backup or replication, the scope is transparent: what DeeAROps owns, and what you provide.</p>
+    </div>
+  </section>
+
+  <!-- Disaster Recovery -->
+  <section class="section" id="disaster-recovery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Services · 01</span>
+        <h2>Disaster Recovery</h2>
+        <p class="lead">Replication strategies across secondary data centers and cloud — designed, governed and operated.</p>
+      </div>
+      <div class="feature-panel reveal">
+        <div class="grid grid-4">
+          <div>
+            <h4>The challenge</h4>
+            <p class="muted" style="margin-top:8px;">When the primary site fails, critical services must come back — within an agreed time, with agreed data loss, without improvisation.</p>
+          </div>
+          <div>
+            <h4>Our approach</h4>
+            <p class="muted" style="margin-top:8px;">Policy-driven replication strategy: architecture design, secondary-site resource planning, job configuration, evaluation, training and documentation.</p>
+          </div>
+          <div>
+            <h4>Technology</h4>
+            <p class="muted" style="margin-top:8px;">Azure Site Recovery, VMware Site Recovery Manager, Zerto, Veeam Replication, storage replication, Oracle Data Guard, SQL Server Always On.</p>
+          </div>
+          <div>
+            <h4>Business outcome</h4>
+            <p class="muted" style="margin-top:8px;">Recovery objectives met and provable — the business keeps running as if nothing happened.</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-3" style="margin-top:24px;">
+        <div class="card reveal">
+          <h3>Design &amp; Implementation</h3>
+          <p>Architecture design, resource planning, replication job configuration, evaluation, training and documentation.</p>
+        </div>
+        <div class="card reveal reveal-d1">
+          <h3>Policy &amp; Assessment</h3>
+          <p>Defining RPO and RTO, building recovery scenarios and runbooks, developing OLAs, and assessing existing environments.</p>
+        </div>
+        <div class="card reveal reveal-d2">
+          <h3>Managed Replication</h3>
+          <p>Operating and monitoring replication, audit-evidence response, periodic evaluation, reporting and vendor escalation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Backup & Recovery -->
+  <section class="section bg-paper" id="backup-recovery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Services · 02</span>
+        <h2>Backup &amp; Recovery</h2>
+        <p class="lead">Every solution designed around the 3-2-1-1-0 backup rule — verified, restorable, and documented.</p>
+      </div>
+      <div class="feature-panel reveal" style="background:#fff;">
+        <div class="grid grid-4">
+          <div>
+            <h4>The challenge</h4>
+            <p class="muted" style="margin-top:8px;">Backups that are never verified are assumptions. The failure is discovered at the worst possible moment — during a restore.</p>
+          </div>
+          <div>
+            <h4>Our approach</h4>
+            <p class="muted" style="margin-top:8px;">System design, repository sizing, job configuration with verification, recovery validation, training, documentation and tier-2 support.</p>
+          </div>
+          <div>
+            <h4>Technology</h4>
+            <p class="muted" style="margin-top:8px;">Veeam, Veritas NetBackup, Commvault, Rubrik, Cohesity, Dell PowerProtect, IBM Spectrum Protect — matched to fit, not familiarity.</p>
+          </div>
+          <div>
+            <h4>Business outcome</h4>
+            <p class="muted" style="margin-top:8px;">Verified, restorable copies of what the business cannot afford to lose — with evidence for auditors.</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-3" style="margin-top:24px;">
+        <div class="card reveal">
+          <h3>Backup &amp; Recovery Build</h3>
+          <p>System design, repository sizing, job configuration with verification, recovery validation, training, docs and tier-2 support.</p>
+        </div>
+        <div class="card reveal reveal-d1">
+          <h3>Policy &amp; Assessment</h3>
+          <p>Building or improving backup policies: RPO/RTO per service, recovery scenarios, operator-level OLAs, and environment assessment.</p>
+        </div>
+        <div class="card reveal reveal-d2">
+          <h3>Managed Backup</h3>
+          <p>Continuous operation and monitoring, audit-evidence response, periodic evaluation, status reporting and tier-3 vendor escalation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service level model + responsibility matrices -->
+  <section class="section" id="service-levels">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Service level model</span>
+        <h2>Three ways we deliver — one clear scope.</h2>
+        <p class="lead">Every engagement follows the same three service levels, with a transparent split between DeeAROps scope and customer scope.</p>
+      </div>
+
+      <div class="table-wrap reveal">
+        <table>
+          <caption>Backup — responsibility matrix</caption>
+          <thead>
+            <tr><th scope="col">Scenario</th><th scope="col">DeeAROps delivers</th><th scope="col">Customer provides</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1 · Build backup system for existing IT services</th>
+              <td>
+                <ul class="check-list">
+                  <li>Study customer IT services &amp; size the backup repository</li>
+                  <li>Propose backup solution</li>
+                  <li>Build &amp; verify backup jobs</li>
+                  <li>On-job training &amp; documentation</li>
+                  <li>Tier-2 (implementer) support</li>
+                </ul>
+              </td>
+              <td>Backup/recovery policies — retention, RPO/RTO · Service runbooks &amp; purchase of backup system/subscriptions · Infrastructure — servers, network, security, storage · Stakeholder involvement &amp; ongoing operation · Tier-3 vendor tickets</td>
+            </tr>
+            <tr>
+              <th scope="row">2 · Build backup &amp; recovery policies / assess existing system</th>
+              <td>
+                <ul class="check-list">
+                  <li>Specify RPO &amp; RTO for each service</li>
+                  <li>Build service recovery scenarios</li>
+                  <li>Build a runbook for each service</li>
+                  <li>Build operator OLA agreement</li>
+                </ul>
+              </td>
+              <td>Business Impact Analysis — severity, TPD &amp; acceptable data loss · Risk assessment for the services</td>
+            </tr>
+            <tr>
+              <th scope="row">3 · Managed Service</th>
+              <td>
+                <ul class="check-list">
+                  <li>Operate &amp; monitor backup and recovery</li>
+                  <li>Respond to evidence requests</li>
+                  <li>Periodic evaluation &amp; status reporting</li>
+                  <li>Tier-3 vendor tickets</li>
+                </ul>
+              </td>
+              <td>Read-only monitoring access for observation and audit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-wrap reveal" style="margin-top:32px;">
+        <table>
+          <caption>Replication &amp; DR — responsibility matrix</caption>
+          <thead>
+            <tr><th scope="col">Scenario</th><th scope="col">DeeAROps delivers</th><th scope="col">Customer provides</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1 · Design &amp; implement replication for existing services</th>
+              <td>
+                <ul class="check-list">
+                  <li>Study existing services &amp; propose replication solution</li>
+                  <li>Design &amp; develop replication strategy</li>
+                  <li>Specify secondary-site resources — compute, network, storage</li>
+                  <li>Configure &amp; evaluate replication jobs</li>
+                  <li>On-job training, documentation &amp; tier-2 support</li>
+                </ul>
+              </td>
+              <td>Replication policies — retention, RPO/RTO · Service runbooks &amp; purchase of replication system / secondary-site resources · Infrastructure across all target sites · Stakeholder involvement &amp; ongoing operation · Tier-3 vendor tickets</td>
+            </tr>
+            <tr>
+              <th scope="row">2 · Build replication &amp; recovery policies / assess existing system</th>
+              <td>
+                <ul class="check-list">
+                  <li>Specify RPO &amp; RTO for each service</li>
+                  <li>Build service recovery scenarios</li>
+                  <li>Build a runbook for each service</li>
+                  <li>Build operator OLA agreement</li>
+                </ul>
+              </td>
+              <td>Business Impact Analysis — severity, TPD &amp; acceptable data loss · Risk assessment for the services</td>
+            </tr>
+            <tr>
+              <th scope="row">3 · Managed Service</th>
+              <td>
+                <ul class="check-list">
+                  <li>Operate &amp; monitor replication activities</li>
+                  <li>Respond to evidence requests</li>
+                  <li>Periodic evaluation &amp; status reporting</li>
+                  <li>Tier-3 vendor tickets</li>
+                </ul>
+              </td>
+              <td>Read-only monitoring access for observation and audit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLA -->
+  <section class="section band-navy on-dark" id="sla">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Service Level Agreement</span>
+        <h2>SLA commitments</h2>
+        <p class="lead">Every managed engagement is measured against clear, contractual targets — and reported monthly.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="reveal"><div class="stat-num">99.5%</div><div class="stat-label">Backup success rate</div><div class="stat-sub">of all scheduled backup jobs</div></div>
+        <div class="reveal reveal-d1"><div class="stat-num">99.9%</div><div class="stat-label">Replication health</div><div class="stat-sub">RPO adherence across sites</div></div>
+        <div class="reveal reveal-d2"><div class="stat-num">99%</div><div class="stat-label">Recovery-test success</div><div class="stat-sub">verified monthly restores</div></div>
+        <div class="reveal reveal-d3"><div class="stat-num">24/7</div><div class="stat-label">Monitoring &amp; response</div><div class="stat-sub">for critical incidents</div></div>
+      </div>
+      <div class="grid grid-3" style="margin-top:48px;">
+        <div class="card reveal">
+          <span class="pill" style="background:rgba(255,255,255,0.12);color:#fff;">Tier 1 · Mission-critical</span>
+          <p style="margin-top:16px;">RPO ≤ 15 min<br>RTO ≤ 1 hr</p>
+        </div>
+        <div class="card reveal reveal-d1">
+          <span class="pill" style="background:rgba(255,255,255,0.12);color:#fff;">Tier 2 · Business</span>
+          <p style="margin-top:16px;">RPO ≤ 4 hrs<br>RTO ≤ 8 hrs</p>
+        </div>
+        <div class="card reveal reveal-d2">
+          <span class="pill" style="background:rgba(255,255,255,0.12);color:#fff;">Tier 3 · Standard</span>
+          <p style="margin-top:16px;">RPO ≤ 24 hrs<br>RTO ≤ 48 hrs</p>
+        </div>
+      </div>
+      <p class="reveal" style="margin-top:24px;color:rgba(255,255,255,0.6);font-size:0.9375rem;">RPO &amp; RTO set per service from the Business Impact Analysis.</p>
+    </div>
+  </section>
+
+  <!-- Response & escalation -->
+  <section class="section bg-paper">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Response &amp; escalation</span>
+        <h2>Severity-based targets. A clear path upward.</h2>
+      </div>
+      <div class="two-col">
+        <div class="table-wrap reveal">
+          <table>
+            <caption>Response &amp; resolution targets</caption>
+            <thead>
+              <tr><th scope="col">Severity</th><th scope="col">Response</th><th scope="col">Resolve / workaround</th><th scope="col">Cover</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">P1 · Critical</th><td>15 min</td><td>4 hrs</td><td>24×7</td></tr>
+              <tr><th scope="row">P2 · High</th><td>30 min</td><td>8 hrs</td><td>24×7</td></tr>
+              <tr><th scope="row">P3 · Medium</th><td>4 hrs</td><td>2 bus. days</td><td>Bus. hrs</td></tr>
+              <tr><th scope="row">P4 · Low</th><td>1 bus. day</td><td>5 bus. days</td><td>Bus. hrs</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <div class="value-row reveal">
+            <div class="idx">L1</div>
+            <div><h4>Operations</h4><p class="muted" style="margin-top:4px;">Monitoring &amp; first response.</p></div>
+          </div>
+          <div class="value-row reveal reveal-d1">
+            <div class="idx">L2</div>
+            <div><h4>DeeAROps Implementer</h4><p class="muted" style="margin-top:4px;">Diagnosis &amp; remediation.</p></div>
+          </div>
+          <div class="value-row reveal reveal-d2">
+            <div class="idx">L3</div>
+            <div><h4>Vendor Support</h4><p class="muted" style="margin-top:4px;">Escalated product tickets.</p></div>
+          </div>
+          <div class="value-row reveal reveal-d3">
+            <div class="idx">M</div>
+            <div><h4>Management Review</h4><p class="muted" style="margin-top:4px;">Governance &amp; service credits.</p></div>
+          </div>
+          <p class="muted reveal" style="margin-top:16px;">Monthly SLA report — success rates, incidents &amp; RPO/RTO attainment. Service credits apply to missed P1 targets, capped monthly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section band-navy on-dark cta-band">
+    <div class="container reveal">
+      <h2 class="display">Which service fits your environment?</h2>
+      <p class="lead">Start with an assessment — we will tell you exactly what DeeAROps owns and what you provide, before any commitment.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="<?php echo esc_url( deearops_url('contact') ); ?>">Talk to Our Experts</a>
+        <a class="btn btn-secondary" href="<?php echo esc_url( deearops_url('solutions') ); ?>">Explore Solutions</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<?php get_footer(); ?>
