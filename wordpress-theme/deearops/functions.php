@@ -152,3 +152,18 @@ function deearops_create_pages() {
 	flush_rewrite_rules();
 }
 add_action( 'after_switch_theme', 'deearops_create_pages' );
+
+/**
+ * Baseline hardening for a public-facing marketing site with no reason to
+ * expose WP version or accept XML-RPC calls. This theme has no dashboard-side
+ * risk beyond WP core/plugin/host hygiene — see README "Deployment: pick one
+ * path" for what still needs deciding at the hosting level (wp-admin access
+ * control, core/plugin update policy) before this goes live alongside, or
+ * instead of, the static site.
+ */
+remove_action( 'wp_head', 'wp_generator' );
+add_filter( 'xmlrpc_enabled', '__return_false' );
+add_filter( 'wp_headers', function ( $headers ) {
+	unset( $headers['X-Pingback'] );
+	return $headers;
+} );

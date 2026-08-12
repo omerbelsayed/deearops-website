@@ -24,6 +24,27 @@
     });
   }
 
+  /* ---------- Back to top ---------- */
+  var backToTop = document.createElement("button");
+  backToTop.type = "button";
+  backToTop.className = "back-to-top";
+  backToTop.setAttribute("aria-label", "Back to top");
+  backToTop.innerHTML =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" ' +
+    'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<path d="M12 19V5"></path><path d="M5 12l7-7 7 7"></path></svg>';
+  document.body.appendChild(backToTop);
+  backToTop.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  window.addEventListener(
+    "scroll",
+    function () {
+      backToTop.classList.toggle("visible", window.scrollY > 600);
+    },
+    { passive: true }
+  );
+
   /* ---------- Reveal on scroll ---------- */
   var reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && reveals.length) {
@@ -176,6 +197,15 @@
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     statusBox.className = "form-status";
+
+    /* Honeypot: real visitors never see or fill this field. If it has a
+       value, silently pretend success and stop — no request, no signal to the bot. */
+    var hp = fieldEl("website");
+    if (hp && hp.value.trim() !== "") {
+      form.reset();
+      showStatus("success", "Thank you. Your message has been received — a DeeAROps specialist will contact you shortly.");
+      return;
+    }
 
     var allOk = true;
     var firstBad = null;

@@ -33,3 +33,16 @@ POST URL accepting JSON `{name, company, email, phone, interest, message}`.
 
 Any static host (GitHub Pages, Netlify, etc.). `sitemap.xml` and `robots.txt`
 assume the production domain `www.deearops.com` — adjust if hosted elsewhere.
+
+### Deployment: pick one path
+
+This repo contains two parallel builds of the same site: this static HTML
+site, and a WordPress theme port under `wordpress-theme/deearops/`. Only one
+should ever be live in production — running both, or standing up WordPress
+with default settings, meaningfully increases attack surface (wp-admin,
+plugin/core update lag, XML-RPC) for no benefit over the static site. The
+theme already disables XML-RPC and the WP-version generator tag, but that's
+theme-level only; if WordPress is the chosen path, still handle at the
+hosting level: keep core/plugins patched, restrict `wp-admin` access
+(IP allowlist or SSO), and confirm the static site isn't also publicly
+reachable at the same time.
